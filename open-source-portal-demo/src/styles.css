@@ -1,8 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 html, body { height: 100%; }
 body { 
     margin: 0; 
     font-family: Roboto,"Helvetica Neue", sans-serif; 
-    background-color: #c0c0c0; 
+    background-color: #c0c0c0;
+
+}
+
+.custom-components-general{
+    background-color: #FFFFFF;
+}
+
+.left-section,
+.center-section,
+.right-section {
+  flex: 1 1 auto;
+  align-items: center;
+}
+
+.right-section{
+    color:#c0c0c0;
+}
+
+.container-main-content{
+    padding: 105px 42px;
+}
+
+
+
+.items-nav{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.profileImage{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.center-section-text{
+    font-size: medium;
+    margin-right: 20px;
+}
+
+.secction-Active{
+    color: #31B465;
+}
+
+.tab-controller{
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.mat-button-toggle-group {
+    background-color: transparent; /* Fully transparent white background */
+    border: 1px #ddd; /* Change this to your desired border color */
+    border-radius: 5px; /* Change this to your desired border radius */
+    padding: 10px; /* Change this to your desired padding */
+}
+
+.mat-button-toggle-checked {
+    background-color: #0A0A0A; /* Change this to your desired active button color */
+    border-radius: 5px;
+    color: #FFFFFF!important; /* Change this to your desired text color */
 }
