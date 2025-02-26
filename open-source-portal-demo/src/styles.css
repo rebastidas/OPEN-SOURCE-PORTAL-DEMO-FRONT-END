@@ -25,10 +25,13 @@ body {
 }
 
 .container-main-content{
-    padding: 105px 42px;
+    padding: 50px 42px;
 }
 
-
+.example-header-image{
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
 
 .items-nav{
     margin-right: 10px;
@@ -53,19 +56,55 @@ body {
 }
 
 .tab-controller{
+    display: flex;
     padding: 15px 30px;
     border-radius: 5px;
+    justify-content: center;
 }
 
 .mat-button-toggle-group {
-    background-color: transparent; /* Fully transparent white background */
-    border: 1px #ddd; /* Change this to your desired border color */
-    border-radius: 5px; /* Change this to your desired border radius */
-    padding: 10px; /* Change this to your desired padding */
+    background-color: transparent; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px; 
 }
 
 .mat-button-toggle-checked {
-    background-color: #0A0A0A; /* Change this to your desired active button color */
+    background-color: #0A0A0A; 
     border-radius: 5px;
-    color: #FFFFFF!important; /* Change this to your desired text color */
+    border: none;
+    color: #FFFFFF!important; 
+}
+
+.mat-button-toggle{
+    margin-right: 10px;
+    border: none;
+}
+
+.mat-button-toggle-button {
+    border-right: none; 
+    border-left: none; 
+  }
+
+.mat-grid-tile-content {
+    display: block !important;
+    padding: 20px !important;
+}
+
+.scrollable-section{
+    max-height: 80vh; /* Set a maximum height (80% of the viewport height) for the container */
+    overflow-y: auto; /* Vertical scroll if needed */
+
+    /* Hide scrollbar when not in use */
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent; /* Firefox */
+
+    /* WebKit browsers (Chrome, Safari) */
+    &::-webkit-scrollbar {
+        width: 6px; /* Adjust the width of the scrollbar as needed */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
 }

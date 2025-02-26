@@ -8,7 +8,9 @@ import { JobDetailsComponent } from './job-details/job-details.component';
 import { ProfilePreviewComponent } from './profile-preview/profile-preview.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
-
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatChipsModule } from '@angular/material/chips';
 @NgModule({
   declarations: [
     FindProjectsComponent,
@@ -20,7 +22,10 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     CommonModule,
     FindProjectsRoutingModule,
     MatGridListModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatCardModule,
+    MatIconModule,
+    MatChipsModule
   ]
 })
 export class FindProjectsModule { }

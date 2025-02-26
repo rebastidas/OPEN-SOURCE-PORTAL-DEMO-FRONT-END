@@ -5,4 +5,46 @@
         <mat-button-toggle value="button3">Most Recent</mat-button-toggle>
       </mat-button-toggle-group>
 </div>
+<div class="scrollable-section">
+  <mat-card class="custom-components-general"  *ngFor="let _ of [].constructor(8); let i = index" style="margin-top: 10px;">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Figma Designer</mat-card-title>
+        <mat-card-subtitle>This is a briefing of the project...</mat-card-subtitle>
+        <mat-icon class="items-nav">
+          bookmark_outline
+        </mat-icon>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-chip-list>
+        <mat-chip>
+          UI Designer
+        </mat-chip>
+  
+        <mat-chip>
+          Figma
+        </mat-chip>
+  
+        <mat-chip>
+          Landing Page
+        </mat-chip>
+      </mat-chip-list>
+      <div style="display: flex; margin-top: 10px; gap:15px;">
+        <div>
+          <mat-icon *ngFor="let _ of [].constructor(5); let i = index" style="color: #ffee00;">
+            star
+          </mat-icon>
+        </div>
+        <div style="display: flex;">
+          <mat-icon style="color: #35b1f4;">
+            verified
+          </mat-icon>
+          <span>Project Verified</span>
+        </div>
+        <span style="color: black;">Proposal: 10 to 15</span>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+
 
