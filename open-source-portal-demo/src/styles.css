@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: Roboto,"Helvetica Neue", sans-serif; 
+    background-color: #c0c0c0;
+
+}
+
+.custom-components-general{
+    background-color: #FFFFFF;
+}
+
+.left-section,
+.center-section,
+.right-section {
+  flex: 1 1 auto;
+  align-items: center;
+}
+
+.right-section{
+    color:#c0c0c0;
+}
+
+.container-main-content{
+    padding: 50px 42px;
+}
+
+.example-header-image{
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.items-nav{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.profileImage{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.center-section-text{
+    font-size: medium;
+    margin-right: 20px;
+}
+
+.secction-Active{
+    color: #31B465;
+}
+
+.tab-controller{
+    display: flex;
+    padding: 15px 30px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.mat-button-toggle-group {
+    background-color: transparent; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px; 
+}
+
+.mat-button-toggle-checked {
+    background-color: #0A0A0A; 
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF!important; 
+}
+
+.mat-button-toggle{
+    margin-right: 10px;
+    border: none;
+}
+
+.mat-button-toggle-button {
+    border-right: none; 
+    border-left: none; 
+  }
+
+.mat-grid-tile-content {
+    display: block !important;
+    padding: 20px !important;
+}
+
+.scrollable-section{
+    max-height: 80vh; /* Set a maximum height (80% of the viewport height) for the container */
+    overflow-y: auto; /* Vertical scroll if needed */
+
+    /* Hide scrollbar when not in use */
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent; /* Firefox */
+
+    /* WebKit browsers (Chrome, Safari) */
+    &::-webkit-scrollbar {
+        width: 6px; /* Adjust the width of the scrollbar as needed */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+}
